@@ -1,6 +1,6 @@
 import { beforeEach, describe, expect, it } from 'vitest'
 import { mount } from '@vue/test-utils'
-import Register from '../Register.vue'
+import Register from '../SubmitEmail.vue'
 
 describe('Register Component', () => {
   let wrapper
