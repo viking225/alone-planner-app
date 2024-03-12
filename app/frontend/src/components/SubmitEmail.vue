@@ -10,8 +10,8 @@ function handleSubmit() {
 </script>
 
 <template>
-  <div>
-    <input type="email" placeholder="Type your email here" v-model="email" />
-    <button @click="handleSubmit" type="submit">Register</button>
+  <div class="flex flex-col">
+    <InputText type="email" placeholder="Type your email here" v-model="email" class="mb-2" />
+    <Button @click="handleSubmit" type="submit" class="w-1/2 m-auto" label="Register" />
   </div>
 </template>
