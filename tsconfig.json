@@ -1,0 +1,19 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./app/frontend/tsconfig.node.json"
+    },
+    {
+      "path": "./app/frontend/tsconfig.app.json"
+    },
+    {
+      "path": "./app/frontend/tsconfig.vitest.json"
+    }
+  ],
+  "compilerOptions": {
+    "paths": {
+      "@lib/core": ["./libs/core"]
+    }
+  }
+}
