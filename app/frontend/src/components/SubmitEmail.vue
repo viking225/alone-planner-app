@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-
 type RegisterFormData = {
-  email: string;
+  email: string
 }
 
 const email = ref(null)
 const emit = defineEmits<{
-  (e:'submit', data: RegisterFormData): void
+  (e: 'submit', data: RegisterFormData): void
 }>()
 
 function handleSubmit() {
