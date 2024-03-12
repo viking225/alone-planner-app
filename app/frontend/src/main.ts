@@ -7,7 +7,7 @@ import Wind from './assets/presets/wind'
 
 import App from './App.vue'
 import router from './router'
-import {registerPrimeVueComponent} from "@/components/registerComponent";
+import { registerPrimeVueComponent } from '@/components/registerComponent'
 
 const app = createApp(App)
 
@@ -16,8 +16,8 @@ app.use(router)
 
 registerPrimeVueComponent(app)
 app.use(PrimeVue, {
-    unstyled: true,
-    pt: Wind
+  unstyled: true,
+  pt: Wind
 })
 
 app.mount('#app')
