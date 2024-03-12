@@ -4,7 +4,7 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header className="flex flex-row basis-2/12 items-center justify-between">
+  <header class="flex flex-row basis-2/12 items-center justify-between p-2">
       <img alt="Vue logo" class="w-5 h-5 grow-0" src="@/assets/logo.svg" />
 
     <nav class="flex grow-1">
@@ -12,7 +12,7 @@ import HelloWorld from './components/HelloWorld.vue'
       <RouterLink to="/about">About</RouterLink>
     </nav>
   </header>
-  <main class="mt-5">
+  <main class="flex mt-5 basis-8/12">
     <RouterView />
   </main>
 
