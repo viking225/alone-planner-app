@@ -1,4 +1,4 @@
 <script setup lang="ts"></script>
 <template>
-  <div>dashborad</div>
+  <div class="h-full w-full flex"></div>
 </template>

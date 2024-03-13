@@ -1,14 +1,9 @@
 import { useAuthStore } from '@/stores'
-import type { NavigationGuardNext, RouteLocationNormalized } from 'vue-router'
+import type { RouteLocationNormalized } from 'vue-router'
 
-export function allowLogged(
-  to: RouteLocationNormalized,
-  from: RouteLocationNormalized,
-  next: NavigationGuardNext
-) {
+export function allowLogged(to: RouteLocationNormalized) {
   const authStore = useAuthStore()
   if (to.meta.isAuthRequired && !authStore.isLogged) {
     return { name: 'register' }
   }
-  next()
 }
