@@ -3,6 +3,7 @@ import RegisterView from '../views/RegisterView.vue'
 import { allowLogged } from '@/router/guards/allowLogged'
 import DashboardView from '@/views/logged/dashboardView.vue'
 import { RouteNames } from '@/const'
+import { registerLayouts } from '@/router/guards/registerLayouts'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,11 +16,15 @@ const router = createRouter({
     {
       path: '/',
       name: RouteNames.dashboard,
-      component: DashboardView
+      component: DashboardView,
+      meta: {
+        layout: 'logged',
+        isAuthRequired: true
+      }
     }
   ]
 })
 
-router.beforeEach((to, from, next) => allowLogged(to, from, next))
-
+router.beforeEach(registerLayouts)
+router.beforeEach((to, from) => allowLogged(to, from))
 export default router
