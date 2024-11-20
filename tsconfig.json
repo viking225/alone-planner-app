@@ -8,6 +8,9 @@
     },
     {
       "path": "./app/frontend/tsconfig.vitest.json"
+    },
+    {
+      "path": "./app/server/tsconfig.json"
     }
   ],
   "compilerOptions": {

@@ -1,4 +1,5 @@
 export const RouteNames = {
   register: 'register',
-  dashboard: 'dashboard'
+  dashboard: 'dashboard',
+  query: 'query'
 }
